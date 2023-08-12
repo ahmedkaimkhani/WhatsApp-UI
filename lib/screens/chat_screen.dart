@@ -60,6 +60,14 @@ class ChatScreen extends StatelessWidget {
               ),
             ]),
           ),
+          body: TabBarView(
+            children: [
+              Text('Chats'),
+              Text('Groups'),
+              Text('Status'),
+              Text('Calls'),
+            ],
+          ),
         ),
       ),
     );
