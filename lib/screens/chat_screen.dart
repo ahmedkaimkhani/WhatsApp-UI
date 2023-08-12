@@ -5,8 +5,12 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          leading: const Icon(Icons.whatsapp_outlined),
+        ),
+      ),
     );
   }
 }
