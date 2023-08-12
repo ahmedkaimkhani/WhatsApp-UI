@@ -7,13 +7,16 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'WhatsApp UI',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: const Color(0xff121B22),
+        brightness: Brightness.dark,
+        appBarTheme: const AppBarTheme(
+          color: Color(0xff1F2C34),
+        )
       ),
     );
   }
