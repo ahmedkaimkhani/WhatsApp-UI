@@ -63,7 +63,12 @@ class ChatScreen extends StatelessWidget {
           ),
           body: const TabBarView(
             children: [
-              ChatTile(),
+              ChatTile(
+                name: 'Ahmed',
+                subtitle: 'set hai',
+                time: '12:00 AM',
+                image: null,
+              ),
               Text('Groups'),
               Text('Status'),
               Text('Calls'),

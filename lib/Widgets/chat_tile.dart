@@ -10,18 +10,26 @@ class ChatTile extends StatelessWidget {
       required this.name,
       required this.subtitle,
       required this.time,
-      required this.image});
+      this.image});
 
   @override
   Widget build(BuildContext context) {
+    const double circleAvatarDiameter = 50 * 2;
+
     return ListTile(
       leading: CircleAvatar(
         radius: 25,
+        backgroundColor: Colors.grey[700],
         backgroundImage: image != null
             ? AssetImage(image!)
             : null, // Set backgroundImage to null when no image is provided
         child: image == null
-            ? const Icon(Icons.account_circle) // Use the default icon here
+            ? const Center(
+                child: Icon(
+              Icons.account_circle,
+              // size: 50,
+              color: Colors.white,
+            ))
             : null,
       ),
       title: Text(name),
