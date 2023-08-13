@@ -69,6 +69,12 @@ class ChatScreen extends StatelessWidget {
                 time: '12:00 AM',
                 image: null,
               ),
+              ChatTile(
+                name: 'Asim',
+                subtitle: 'ok jani',
+                time: '8:33 PM',
+                image: 'assets/images/asim.jpg',
+              ),
               Text('Groups'),
               Text('Status'),
               Text('Calls'),

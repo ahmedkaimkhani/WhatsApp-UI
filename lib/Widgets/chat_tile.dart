@@ -32,8 +32,8 @@ class ChatTile extends StatelessWidget {
             : null,
       ),
       title: Text(name),
-      subtitle: Text(subtitle),
-      trailing: Text(time),
+      subtitle: Text(subtitle,style: const TextStyle(color: Colors.grey),),
+      trailing: Text(time,style: const TextStyle(color: Colors.grey),),
     );
   }
 }
