@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           color: Color(0xff1F2C34),
         )
       ),
-      home: const ChatScreen(),
+      home:  ChatScreen(),
     );
   }
 }
