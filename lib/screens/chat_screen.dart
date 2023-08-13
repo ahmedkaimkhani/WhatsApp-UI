@@ -66,77 +66,77 @@ class ChatScreen extends StatelessWidget {
               SingleChildScrollView(
                 child: Column(
                   children: const [
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Ahmed',
                       subtitle: 'set hai',
                       time: '12:00 AM',
                       image: null,
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Asim',
                       subtitle: 'ok jani',
                       time: '8:33 PM',
                       image: 'assets/images/asim.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Usman',
                       subtitle: 'thek hai',
                       time: '5:53 PM',
                       image: 'assets/images/usman.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Arbaz',
                       subtitle: 'ok bro',
                       time: '10:14 PM',
                       image: 'assets/images/arbaz.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Naveed',
                       subtitle: 'chalty hain',
                       time: '8:33 PM',
                       image: 'assets/images/naveed.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Areesh',
                       subtitle: 'bethty hain',
                       time: '6:44 PM',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Awais',
                       subtitle: 'krty hain kuch',
                       time: '2:35 AM',
                       image: 'assets/images/awais.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Faish SMIT',
                       subtitle: 'ok',
                       time: '3:11 AM',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Hamza',
                       subtitle: 'best hai',
                       time: '6:47 PM',
                       image: 'assets/images/hamza.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Saim',
                       subtitle: 'hmm',
                       time: '1:52 AM',
                       image: 'assets/images/saim.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Imran',
                       subtitle: 'sahi',
                       time: '3:16 PM',
                       image: 'assets/images/imran.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Kashif',
                       subtitle: 'chalain',
                       time: '7:46 PM',
                       image: 'assets/images/kashif.jpg',
                     ),
-                    ChatTile(
+                    CustomChatStyle(
                       name: 'Faizan',
                       subtitle: 'aajaaa',
                       time: '5:15 PM',

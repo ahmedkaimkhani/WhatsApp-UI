@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class CustomChatStyle extends StatelessWidget {
+class CustomGroupStyle extends StatelessWidget {
   final String name;
   final String subtitle;
   final String time;
   final String? image;
-  const CustomChatStyle(
+  const CustomGroupStyle(
       {super.key,
       required this.name,
       required this.subtitle,
