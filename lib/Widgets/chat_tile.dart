@@ -2,26 +2,31 @@ import 'package:flutter/material.dart';
 
 class ChatTile extends StatelessWidget {
   final String name;
-  final String? subtitle;
+  final String subtitle;
   final String time;
-  final String image;
+  final String? image;
   const ChatTile(
       {super.key,
       required this.name,
-      this.subtitle,
+      required this.subtitle,
       required this.time,
       required this.image});
 
   @override
   Widget build(BuildContext context) {
-    return const ListTile(
+    return ListTile(
       leading: CircleAvatar(
         radius: 25,
-        backgroundImage: AssetImage('assets/images/ahmed.jpg'),
+        backgroundImage: image != null
+            ? AssetImage(image!)
+            : null, // Set backgroundImage to null when no image is provided
+        child: image == null
+            ? const Icon(Icons.account_circle) // Use the default icon here
+            : null,
       ),
-      title: Text('Ahmed Sheikh'),
-      subtitle: Text('scene on hai'),
-      trailing: Text('12:15 AM'),
+      title: Text(name),
+      subtitle: Text(subtitle),
+      trailing: Text(time),
     );
   }
 }
