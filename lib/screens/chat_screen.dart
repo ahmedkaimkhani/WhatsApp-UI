@@ -3,13 +3,13 @@ import 'package:flutter_whatsapp_ui/Widgets/chat_tile.dart';
 
 class ChatScreen extends StatelessWidget {
   final String name;
-  final String subtitle;
+  final String? subtitle;
   final String time;
   final String image;
   const ChatScreen(
       {Key? key,
       required this.name,
-      required this.subtitle,
+      this.subtitle,
       required this.time,
       required this.image})
       : super(key: key);
@@ -67,17 +67,14 @@ class ChatScreen extends StatelessWidget {
                 child: Text('Status'),
               ),
               Tab(
-                child: Text('Calls'),
+                child: Text('Calls')
               ),
             ]),
           ),
-          body: TabBarView(
+          body: const TabBarView(
             children: [
-              ListView.builder(
-                itemBuilder: (context, index) {
-                  return ChatTile();
-                },
-                itemCount: 15,
+              ChatTile(
+                
               ),
               Text('Groups'),
               Text('Status'),
