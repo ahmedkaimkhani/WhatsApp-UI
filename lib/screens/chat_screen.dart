@@ -2,17 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_ui/Widgets/chat_tile.dart';
 
 class ChatScreen extends StatelessWidget {
-  final String name;
-  final String? subtitle;
-  final String time;
-  final String image;
-  const ChatScreen(
-      {Key? key,
-      required this.name,
-      this.subtitle,
-      required this.time,
-      required this.image})
-      : super(key: key);
+  const ChatScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -67,15 +57,13 @@ class ChatScreen extends StatelessWidget {
                 child: Text('Status'),
               ),
               Tab(
-                child: Text('Calls')
+                child: Text('Calls'),
               ),
             ]),
           ),
           body: const TabBarView(
             children: [
-              ChatTile(
-                
-              ),
+              ChatTile(),
               Text('Groups'),
               Text('Status'),
               Text('Calls'),
