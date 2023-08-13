@@ -14,10 +14,9 @@ class ChatTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return ListTile(
       leading: CircleAvatar(
-        radius: 25,
+        radius: 20,
         backgroundColor: Colors.grey[700],
         backgroundImage: image != null
             ? AssetImage(image!)
@@ -25,15 +24,21 @@ class ChatTile extends StatelessWidget {
         child: image == null
             ? const Center(
                 child: Icon(
-              Icons.account_circle,
-              size: 30,
-              color: Colors.white,
-            ))
+                Icons.account_circle,
+                size: 30,
+                color: Colors.white,
+              ))
             : null,
       ),
       title: Text(name),
-      subtitle: Text(subtitle,style: const TextStyle(color: Colors.grey),),
-      trailing: Text(time,style: const TextStyle(color: Colors.grey),),
+      subtitle: Text(
+        subtitle,
+        style: const TextStyle(color: Colors.grey),
+      ),
+      trailing: Text(
+        time,
+        style: const TextStyle(color: Colors.grey),
+      ),
     );
   }
 }
