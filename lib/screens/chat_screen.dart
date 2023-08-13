@@ -61,19 +61,91 @@ class ChatScreen extends StatelessWidget {
               ),
             ]),
           ),
-          body: const TabBarView(
+          body: TabBarView(
             children: [
-              ChatTile(
-                name: 'Ahmed',
-                subtitle: 'set hai',
-                time: '12:00 AM',
-                image: null,
-              ),
-              ChatTile(
-                name: 'Asim',
-                subtitle: 'ok jani',
-                time: '8:33 PM',
-                image: 'assets/images/asim.jpg',
+              SingleChildScrollView(
+                child: Column(
+                  children: const [
+                    ChatTile(
+                  name: 'Ahmed',
+                  subtitle: 'set hai',
+                  time: '12:00 AM',
+                  image: null,
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                ChatTile(
+                  name: 'Asim',
+                  subtitle: 'ok jani',
+                  time: '8:33 PM',
+                  image: 'assets/images/asim.jpg',
+                ),
+                  ],
+                ),
               ),
               Text('Groups'),
               Text('Status'),
