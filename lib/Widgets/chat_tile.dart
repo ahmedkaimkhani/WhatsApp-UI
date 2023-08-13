@@ -14,7 +14,6 @@ class ChatTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const double circleAvatarDiameter = 50 * 2;
 
     return ListTile(
       leading: CircleAvatar(
@@ -27,7 +26,7 @@ class ChatTile extends StatelessWidget {
             ? const Center(
                 child: Icon(
               Icons.account_circle,
-              // size: 50,
+              size: 30,
               color: Colors.white,
             ))
             : null,
