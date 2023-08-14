@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whatsapp_ui/Widgets/chat_tile.dart';
+import 'package:flutter_whatsapp_ui/Widgets/chat_screen.dart';
 
 class CustomGroupStyle extends StatelessWidget {
   final String name;
