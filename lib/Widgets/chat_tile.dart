@@ -16,20 +16,19 @@ class CustomChatStyle extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        radius: 20,
-        backgroundColor: Colors.grey[700],
-        backgroundImage: image != null
-            ? AssetImage(image!)
-            : null, // Set backgroundImage to null when no image is provided
-        child: image == null
-            ? const Center(
-                child: Icon(
-                Icons.account_circle,
-                size: 30,
-                color: Colors.white,
-              ))
-            : null,
-      ),
+          radius: 20,
+          backgroundColor: Colors.grey[700],
+          backgroundImage: image != null
+              ? AssetImage(image!)
+              : null, // Set backgroundImage to null when no image is provided
+          child: image == null
+              ? const Center(
+                  child: Icon(
+                  Icons.account_circle,
+                  size: 30,
+                  color: Colors.white,
+                ))
+              : null),
       title: Padding(
         padding: const EdgeInsets.only(bottom: 10),
         child: Text(
