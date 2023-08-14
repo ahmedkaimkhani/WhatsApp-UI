@@ -30,14 +30,20 @@ class CustomChatStyle extends StatelessWidget {
               ))
             : null,
       ),
-      title: Text(name),
+      title: Padding(
+        padding: const EdgeInsets.only(bottom: 10),
+        child: Text(
+          name,
+          style: const TextStyle(fontSize: 14),
+        ),
+      ),
       subtitle: Text(
         subtitle,
-        style: const TextStyle(color: Colors.grey),
+        style: const TextStyle(color: Colors.grey, fontSize: 12),
       ),
       trailing: Text(
         time,
-        style: const TextStyle(color: Colors.grey),
+        style: const TextStyle(color: Colors.grey, fontSize: 12),
       ),
     );
   }

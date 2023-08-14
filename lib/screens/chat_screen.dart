@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_ui/Widgets/chat_tile.dart';
+import 'package:flutter_whatsapp_ui/screens/group_screen.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({Key? key}) : super(key: key);
@@ -145,7 +146,8 @@ class ChatScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Text('Groups'),
+              // Group Screen
+              const GroupScreen(),
               Text('Status'),
               Text('Calls'),
             ],
