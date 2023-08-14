@@ -6,12 +6,19 @@ class CustomStatusStyle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: const [
         ListTile(
           leading: CircleAvatar(
             radius: 20,
+            backgroundColor: Colors.teal,
+            child: Icon(
+              Icons.link,
+              color: Colors.white,
+            ),
           ),
-        )
+          title: Text('My status'),
+          subtitle: Text('Tap to add status update'),
+        ),
       ],
     );
   }
