@@ -15,6 +15,11 @@ class CustomGroupStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomChatStyle(name: name, subtitle: subtitle, time: time);
+    return CustomChatStyle(
+      name: name,
+      subtitle: subtitle,
+      time: time,
+      image: image,
+    );
   }
 }

@@ -6,7 +6,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}): super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,14 +14,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'WhatsApp UI',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xff121B22),
-        brightness: Brightness.dark,
-        appBarTheme: const AppBarTheme(
-          elevation: 0,
-          color: Color(0xff1F2C34),
-        )
-      ),
-      home:  const ChatScreen(),
+          scaffoldBackgroundColor: const Color(0xff121B22),
+          brightness: Brightness.dark,
+          appBarTheme: const AppBarTheme(
+            elevation: 0,
+            color: Color(0xff1F2C34),
+          )),
+      home: const ChatScreen(),
     );
   }
 }
