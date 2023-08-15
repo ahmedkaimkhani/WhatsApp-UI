@@ -41,3 +41,44 @@ class CallLink extends StatelessWidget {
     );
   }
 }
+
+class CustomCallStyle extends StatelessWidget {
+  final String name;
+  final String subtitle;
+  final String? image;
+  const CustomCallStyle(
+      {super.key, required this.name, required this.subtitle, this.image});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        ListTile(
+          leading: CircleAvatar(
+            radius: 20,
+            backgroundColor: Colors.grey[700],
+            backgroundImage: image != null
+                ? AssetImage(image!)
+                : null, // Set backgroundImage to null when no image is provided
+            child: image == null
+                ? const Center(
+                    child: Icon(
+                    Icons.account_circle,
+                    size: 30,
+                    color: Colors.white,
+                  ))
+                : null,
+          ),
+          title: Text(
+            name,
+            style: const TextStyle(fontSize: 14),
+          ),
+          subtitle: Text(
+            subtitle,
+            style: const TextStyle(color: Colors.grey, fontSize: 12),
+          ),
+        ),
+      ],
+    );
+  }
+}
