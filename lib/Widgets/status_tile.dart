@@ -10,36 +10,34 @@ class StatusUpdate extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
-        ListTile(
-          leading: CircleAvatar(
-            radius: 20,
-            backgroundColor: Colors.teal,
-            child: Icon(
-              Icons.add_a_photo_rounded,
-              color: Colors.white,
+        Padding(
+          padding: EdgeInsets.only(bottom: 08),
+          child: ListTile(
+            leading: CircleAvatar(
+              radius: 20,
+              backgroundColor: Colors.teal,
+              child: Icon(
+                Icons.add_a_photo_rounded,
+                color: Colors.white,
+              ),
+            ),
+            title: Text(
+              'My status',
+              style: TextStyle(fontSize: 14),
+            ),
+            subtitle: Text(
+              'Tap to add status update',
+              style: TextStyle(color: Colors.grey, fontSize: 12),
             ),
           ),
-          title: Text(
-            'My status',
-            style: TextStyle(fontSize: 14),
-          ),
-          subtitle: Text(
-            'Tap to add status update',
-            style: TextStyle(color: Colors.grey, fontSize: 12),
-          ),
-        ),
-        SizedBox(
-          height: 08,
         ),
         Padding(
-          padding: EdgeInsets.only(left: 18),
+          padding: EdgeInsets.only(left: 18, bottom: 08),
           child: Text(
             'Recent updates',
-            style: TextStyle(color: Color.fromARGB(255, 236, 140, 140)),
+            style: TextStyle(
+                fontSize: 12, color: Color.fromARGB(255, 236, 140, 140)),
           ),
-        ),
-        SizedBox(
-          height: 08,
         ),
       ],
     );
@@ -50,7 +48,7 @@ class CustomStatusStyle extends StatelessWidget {
   final String name;
   final String subtitle;
   final String? image;
-  final String? borderColor;
+  final Color? borderColor;
   const CustomStatusStyle(
       {super.key,
       required this.name,
@@ -60,6 +58,8 @@ class CustomStatusStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final actualColor = borderColor ?? CustomColor.colorRecentStatus;
+
     return Column(
       children: [
         ListTile(
@@ -68,7 +68,7 @@ class CustomStatusStyle extends StatelessWidget {
             width: 40,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              border: Border.all(color: Colors.teal, width: 2.5),
+              border: Border.all(color: actualColor, width: 2.5),
             ),
             child: CircleAvatar(
               radius: 20,
@@ -101,8 +101,6 @@ class CustomStatusStyle extends StatelessWidget {
 }
 
 class CustomColor {
-  void styling() {
-    var colorRecentStatus = Colors.teal;
-    var colorViewedStatus = Colors.grey;
-  }
+  static const colorRecentStatus = Colors.teal;
+  static const colorViewedStatus = Colors.grey;
 }

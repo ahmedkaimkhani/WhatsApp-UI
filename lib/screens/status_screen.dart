@@ -8,6 +8,7 @@ class StatusScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           StatusUpdate(),
           CustomStatusStyle(
@@ -72,6 +73,15 @@ class StatusScreen extends StatelessWidget {
             name: 'Faizan',
             subtitle: 'Yesterday, 9:36 PM',
             image: 'assets/images/faizan.jpg',
+          ),
+          // Viewed Status
+          Padding(
+            padding: EdgeInsets.only(left: 18, top: 08, bottom: 08),
+            child: Text(
+              'Viewed updates',
+              style: TextStyle(
+                  fontSize: 12, color: Color.fromARGB(255, 236, 140, 140)),
+            ),
           ),
         ],
       ),
