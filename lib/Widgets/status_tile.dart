@@ -57,24 +57,36 @@ class CustomStatusStyle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ListTile(
-          leading: CircleAvatar(
-            radius: 20,
-            backgroundColor: Colors.grey[700],
-            backgroundImage: image != null
-                ? AssetImage(image!)
-                : null, // Set backgroundImage to null when no image is provided
-            child: image == null
-                ? const Center(
-                    child: Icon(
-                    Icons.account_circle,
-                    size: 30,
-                    color: Colors.white,
-                  ))
-                : null,
+        Container(
+          height: 40,
+          width: 40,
+          decoration: BoxDecoration(
+              shape: BoxShape.circle, border: Border.all(color: Colors.teal)),
+          child: ListTile(
+            leading: CircleAvatar(
+              radius: 20,
+              backgroundColor: Colors.grey[700],
+              backgroundImage: image != null
+                  ? AssetImage(image!)
+                  : null, // Set backgroundImage to null when no image is provided
+              child: image == null
+                  ? const Center(
+                      child: Icon(
+                      Icons.account_circle,
+                      size: 30,
+                      color: Colors.white,
+                    ))
+                  : null,
+            ),
+            title: Text(
+              name,
+              style: const TextStyle(fontSize: 14),
+            ),
+            subtitle: Text(
+              subtitle,
+              style: const TextStyle(color: Colors.grey, fontSize: 12),
+            ),
           ),
-          title: Text(name),
-          subtitle: Text(subtitle),
         ),
       ],
     );
