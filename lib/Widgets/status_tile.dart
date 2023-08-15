@@ -57,13 +57,15 @@ class CustomStatusStyle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          height: 40,
-          width: 40,
-          decoration: BoxDecoration(
-              shape: BoxShape.circle, border: Border.all(color: Colors.teal)),
-          child: ListTile(
-            leading: CircleAvatar(
+        ListTile(
+          leading: Container(
+            height: 40,
+            width: 40,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: Colors.teal, width: 3),
+            ),
+            child: CircleAvatar(
               radius: 20,
               backgroundColor: Colors.grey[700],
               backgroundImage: image != null
@@ -78,14 +80,14 @@ class CustomStatusStyle extends StatelessWidget {
                     ))
                   : null,
             ),
-            title: Text(
-              name,
-              style: const TextStyle(fontSize: 14),
-            ),
-            subtitle: Text(
-              subtitle,
-              style: const TextStyle(color: Colors.grey, fontSize: 12),
-            ),
+          ),
+          title: Text(
+            name,
+            style: const TextStyle(fontSize: 14),
+          ),
+          subtitle: Text(
+            subtitle,
+            style: const TextStyle(color: Colors.grey, fontSize: 12),
           ),
         ),
       ],
