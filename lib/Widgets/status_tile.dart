@@ -19,8 +19,14 @@ class StatusUpdate extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          title: Text('My status'),
-          subtitle: Text('Tap to add status update'),
+          title: Text(
+            'My status',
+            style: TextStyle(fontSize: 14),
+          ),
+          subtitle: Text(
+            'Tap to add status update',
+            style: TextStyle(color: Colors.grey, fontSize: 12),
+          ),
         ),
         SizedBox(
           height: 08,

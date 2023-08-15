@@ -65,6 +65,7 @@ class ChatScreen extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
+              // Chat Screen
               SingleChildScrollView(
                 child: Column(
                   children: const [
@@ -147,8 +148,9 @@ class ChatScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              // Group Screen
+              // 2: Group Screen
               const GroupScreen(),
+              // 3: Status Screen
               const StatusScreen(),
               Text('Calls'),
             ],
