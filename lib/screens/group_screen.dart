@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whatsapp_ui/Widgets/group_screen.dart';
+import 'package:flutter_whatsapp_ui/Widgets/group_tile.dart';
 
 class GroupScreen extends StatelessWidget {
   const GroupScreen({super.key});
