@@ -63,7 +63,7 @@ class CustomStatusStyle extends StatelessWidget {
             width: 40,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              border: Border.all(color: Colors.teal, width: 3),
+              border: Border.all(color: Colors.teal, width: 2.5),
             ),
             child: CircleAvatar(
               radius: 20,
