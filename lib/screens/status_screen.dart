@@ -8,7 +8,11 @@ class StatusScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: const [
-        CustomStatusStyle(),
+        CustomStatusStyle(
+          name: '',
+          subtitle: '',
+          image: null,
+        ),
       ],
     );
   }
