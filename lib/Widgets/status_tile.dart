@@ -50,8 +50,13 @@ class CustomStatusStyle extends StatelessWidget {
   final String name;
   final String subtitle;
   final String? image;
+  final String? borderColor;
   const CustomStatusStyle(
-      {super.key, required this.name, required this.subtitle, this.image});
+      {super.key,
+      required this.name,
+      required this.subtitle,
+      this.image,
+      this.borderColor});
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +68,7 @@ class CustomStatusStyle extends StatelessWidget {
             width: 40,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              border: Border.all(color: Colors.teal, width: 2.5),
+              border: borderColor != null ? Border.all() : null,
             ),
             child: CircleAvatar(
               radius: 20,
