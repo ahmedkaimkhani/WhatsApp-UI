@@ -40,40 +40,7 @@ class StatusScreen extends StatelessWidget {
             name: 'Areesh',
             subtitle: 'Today, 12:13 PM',
           ),
-          CustomStatusStyle(
-            name: 'Awais',
-            subtitle: 'Today, 11:58 AM',
-            image: 'assets/images/awais.jpg',
-          ),
-          CustomStatusStyle(
-            name: 'Faish SMIT',
-            subtitle: 'Today, 11:12 AM',
-          ),
-          CustomStatusStyle(
-            name: 'Hamza',
-            subtitle: 'Today, 9:58 AM',
-            image: 'assets/images/hamza.jpg',
-          ),
-          CustomStatusStyle(
-            name: 'Saim',
-            subtitle: 'Today, 8:05 AM',
-            image: 'assets/images/saim.jpg',
-          ),
-          CustomStatusStyle(
-            name: 'Imran',
-            subtitle: 'Today, 3:30 AM',
-            image: 'assets/images/imran.jpg',
-          ),
-          CustomStatusStyle(
-            name: 'Kashif',
-            subtitle: 'Today, 1:41 AM',
-            image: 'assets/images/kashif.jpg',
-          ),
-          CustomStatusStyle(
-            name: 'Faizan',
-            subtitle: 'Yesterday, 9:36 PM',
-            image: 'assets/images/faizan.jpg',
-          ),
+
           // Viewed Status
           Padding(
             padding: EdgeInsets.only(left: 18, top: 08, bottom: 08),
@@ -82,6 +49,47 @@ class StatusScreen extends StatelessWidget {
               style: TextStyle(
                   fontSize: 12, color: Color.fromARGB(255, 236, 140, 140)),
             ),
+          ),
+          CustomStatusStyle(
+            name: 'Awais',
+            subtitle: 'Today, 11:58 AM',
+            image: 'assets/images/awais.jpg',
+            borderColor: CustomColor.colorViewedStatus,
+          ),
+          CustomStatusStyle(
+            name: 'Faish SMIT',
+            subtitle: 'Today, 11:12 AM',
+            borderColor: CustomColor.colorViewedStatus,
+          ),
+          CustomStatusStyle(
+            name: 'Hamza',
+            subtitle: 'Today, 9:58 AM',
+            image: 'assets/images/hamza.jpg',
+            borderColor: CustomColor.colorViewedStatus,
+          ),
+          CustomStatusStyle(
+            name: 'Saim',
+            subtitle: 'Today, 8:05 AM',
+            image: 'assets/images/saim.jpg',
+            borderColor: CustomColor.colorViewedStatus,
+          ),
+          CustomStatusStyle(
+            name: 'Imran',
+            subtitle: 'Today, 3:30 AM',
+            image: 'assets/images/imran.jpg',
+            borderColor: CustomColor.colorViewedStatus,
+          ),
+          CustomStatusStyle(
+            name: 'Kashif',
+            subtitle: 'Today, 1:41 AM',
+            image: 'assets/images/kashif.jpg',
+            borderColor: CustomColor.colorViewedStatus,
+          ),
+          CustomStatusStyle(
+            name: 'Faizan',
+            subtitle: 'Yesterday, 9:36 PM',
+            image: 'assets/images/faizan.jpg',
+            borderColor: CustomColor.colorViewedStatus,
           ),
         ],
       ),
