@@ -32,7 +32,7 @@ class CallLink extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: 18, bottom: 08),
           child: Text(
-            'Recent updates',
+            'Recent',
             style: TextStyle(
                 fontSize: 12, color: Color.fromARGB(255, 236, 140, 140)),
           ),
@@ -76,6 +76,10 @@ class CustomCallStyle extends StatelessWidget {
           subtitle: Text(
             subtitle,
             style: const TextStyle(color: Colors.grey, fontSize: 12),
+          ),
+          trailing: const Icon(
+            Icons.call,
+            color: Colors.teal,
           ),
         ),
       ],
