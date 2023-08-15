@@ -12,7 +12,7 @@ class CustomStatusStyle extends StatelessWidget {
             radius: 20,
             backgroundColor: Colors.teal,
             child: Icon(
-              Icons.link,
+              Icons.add_a_photo_rounded,
               color: Colors.white,
             ),
           ),
