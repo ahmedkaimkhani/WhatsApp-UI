@@ -99,3 +99,10 @@ class CustomStatusStyle extends StatelessWidget {
     );
   }
 }
+
+class CustomColor {
+  void styling() {
+    var colorRecentStatus = Colors.teal;
+    var colorViewedStatus = Colors.grey;
+  }
+}
