@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 
-class CustomStatusStyle extends StatelessWidget {
-  final String name;
-  final String subtitle;
-  final String? image;
-  const CustomStatusStyle(
-      {super.key, required this.name, required this.subtitle, this.image});
+class StatusUpdate extends StatelessWidget {
+  const StatusUpdate({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const ListTile(
+      children: const [
+        ListTile(
           leading: CircleAvatar(
             radius: 20,
             backgroundColor: Colors.teal,
@@ -24,19 +22,35 @@ class CustomStatusStyle extends StatelessWidget {
           title: Text('My status'),
           subtitle: Text('Tap to add status update'),
         ),
-        const SizedBox(
+        SizedBox(
           height: 08,
         ),
-        const Padding(
+        Padding(
           padding: EdgeInsets.only(left: 18),
           child: Text(
             'Recent updates',
             style: TextStyle(color: Color.fromARGB(255, 236, 140, 140)),
           ),
         ),
-        const SizedBox(
+        SizedBox(
           height: 08,
         ),
+      ],
+    );
+  }
+}
+
+class CustomStatusStyle extends StatelessWidget {
+  final String name;
+  final String subtitle;
+  final String? image;
+  const CustomStatusStyle(
+      {super.key, required this.name, required this.subtitle, this.image});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
         ListTile(
           leading: CircleAvatar(
             radius: 20,
@@ -55,7 +69,7 @@ class CustomStatusStyle extends StatelessWidget {
           ),
           title: Text(name),
           subtitle: Text(subtitle),
-        )
+        ),
       ],
     );
   }
