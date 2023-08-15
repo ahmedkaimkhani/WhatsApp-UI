@@ -9,6 +9,7 @@ class StatusScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: const [
+          StatusUpdate(),
           CustomStatusStyle(
             name: 'Ahmed',
             subtitle: 'set hai',
