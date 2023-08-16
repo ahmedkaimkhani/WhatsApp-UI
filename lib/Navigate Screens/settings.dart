@@ -21,7 +21,18 @@ class SettingsScreen extends StatelessWidget {
           )
         ],
       ),
-      body: const CustomSettingStyle(),
+      body: Column(
+        children: [
+          customListTile(
+            image: 'assets/images/mine.jpg',
+            icon: Icons.qr_code,
+          ),
+          Divider(
+            color: Colors.grey,
+            thickness: 0.1,
+          )
+        ],
+      ),
     );
   }
 }
