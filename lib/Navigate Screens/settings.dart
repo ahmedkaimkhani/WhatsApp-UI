@@ -24,13 +24,15 @@ class SettingsScreen extends StatelessWidget {
       body: Column(
         children: [
           customListTile(
+            title: 'Ahmed Kaim Khani',
+            subtitle: 'Chasing goals.',
             image: 'assets/images/mine.jpg',
             icon: Icons.qr_code,
           ),
-          Divider(
+          const Divider(
             color: Colors.grey,
             thickness: 0.1,
-          )
+          ),
         ],
       ),
     );
