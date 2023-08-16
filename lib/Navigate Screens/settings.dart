@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_ui/Navigate%20Widgets/setting_tile.dart';
+import 'package:flutter_whatsapp_ui/Styling/styling.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -28,6 +29,8 @@ class SettingsScreen extends StatelessWidget {
             subtitle: 'Chasing goals.',
             image: 'assets/images/mine.jpg',
             icon: Icons.qr_code,
+            fontSizeT: Styling.font_18,
+            fontSizeS: Styling.font_14,
           ),
           const Divider(
             color: Colors.grey,

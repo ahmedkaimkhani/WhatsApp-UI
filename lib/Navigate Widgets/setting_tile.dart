@@ -7,7 +7,8 @@ Widget customListTile({
   String? image,
   IconData? icon,
   String? text,
-  TextStyle? fontSize,
+  TextStyle? fontSizeT,
+  TextStyle? fontSizeS,
 }) {
   return Padding(
     padding: const EdgeInsets.only(top: 10),
@@ -20,11 +21,11 @@ Widget customListTile({
           : Icon(icon),
       title: Text(
         title,
-        style: fontSize != null ? Styling.font_18 : Styling.font_14,
+        style: fontSizeT != null ? Styling.font_18 : Styling.font_14,
       ),
       subtitle: Text(
         subtitle,
-        style: fontSize != null ? Styling.font_14 : Styling.font_12,
+        style: fontSizeS != null ? Styling.font_14 : Styling.font_12,
       ),
       trailing: text != null
           ? Text(text)
