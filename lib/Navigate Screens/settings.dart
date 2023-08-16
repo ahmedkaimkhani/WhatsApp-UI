@@ -7,23 +7,23 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: const Icon(Icons.arrow_back)),
-          title: const Text('Settings'),
-          actions: const [
-            Padding(
-              padding: EdgeInsets.only(right: 15),
-              child: Icon(Icons.search),
-            )
-          ],
-        ),
-        body: Column(
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back)),
+        title: const Text('Settings'),
+        actions: const [
+          Padding(
+            padding: EdgeInsets.only(right: 15),
+            child: Icon(Icons.search),
+          )
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 10),
@@ -42,12 +42,12 @@ class SettingsScreen extends StatelessWidget {
             ),
             customListTile(
               title: 'Account',
-              subtitle: 'Security notifications, chnage\nnumber',
+              subtitle: 'Security notifications, chnage number',
               icon: Icons.key,
             ),
             customListTile(
               title: 'Privacy',
-              subtitle: 'Block contacts, disappearing\nmessages',
+              subtitle: 'Block contacts, disappearing messages',
               icon: Icons.lock,
             ),
             customListTile(
@@ -84,6 +84,22 @@ class SettingsScreen extends StatelessWidget {
               title: 'Invite a friend',
               subtitle: '',
               icon: Icons.group,
+            ),
+            const Center(
+                child: Text(
+              'from',
+              style: TextStyle(fontSize: 12, color: Colors.grey),
+            )),
+            const SizedBox(
+              height: 8,
+            ),
+            const Center(
+                child: Text(
+              'Meta',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
+            )),
+            const SizedBox(
+              height: 30,
             ),
           ],
         ),
