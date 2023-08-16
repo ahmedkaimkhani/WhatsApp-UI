@@ -8,13 +8,20 @@ class CustomSettingStyle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        customListTile(image: 'assets/images/mine.jpg'),
+        customListTile(
+          image: 'assets/images/mine.jpg',
+          icon: Icons.qr_code,
+        ),
       ],
     );
   }
 }
 
-Widget customListTile({String? image, IconData? icon}) {
+Widget customListTile({
+  String? image,
+  IconData? icon,
+  String? text,
+}) {
   return ListTile(
     leading: image != null
         ? CircleAvatar(
@@ -30,10 +37,12 @@ Widget customListTile({String? image, IconData? icon}) {
       'Chasing goals.',
       style: Styling.font_14,
     ),
-    trailing: const Icon(
-      Icons.qr_code,
-      color: Colors.teal,
-      size: 30,
-    ),
+    trailing: text != null
+        ? Text(text)
+        : Icon(
+            icon,
+            size: 30,
+            color: Colors.teal,
+          ),
   );
 }

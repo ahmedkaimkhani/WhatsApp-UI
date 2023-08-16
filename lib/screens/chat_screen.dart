@@ -66,15 +66,19 @@ class ChatScreen extends StatelessWidget {
             ],
             bottom: const TabBar(tabs: [
               Tab(
+                icon: Icon(Icons.chat_bubble_outline),
                 child: Text('Chats'),
               ),
               Tab(
+                icon: Icon(Icons.group_outlined),
                 child: Text('Groups'),
               ),
               Tab(
+                icon: Icon(Icons.add_a_photo_rounded),
                 child: Text('Status'),
               ),
               Tab(
+                icon: Icon(Icons.call_outlined),
                 child: Text('Calls'),
               ),
             ]),
