@@ -8,27 +8,32 @@ class CustomSettingStyle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ListTile(
-          leading: customListTile(),
-          title: const Text(
-            'Ahmed Kaim Khani',
-            style: Styling.font_16,
-          ),
-          subtitle: const Text(
-            'Chasing goals.',
-            style: Styling.font_14,
-          ),
-        )
+        customListTile(image: 'assets/images/mine.jpg'),
       ],
     );
   }
 }
 
-customListTile() {
-  return const ListTile(
-    leading: CircleAvatar(
-      radius: 30,
-      backgroundImage: AssetImage('assets/images/mine.jpg'),
+Widget customListTile({String? image, IconData? icon}) {
+  return ListTile(
+    leading: image != null
+        ? CircleAvatar(
+            radius: 40,
+            backgroundImage: AssetImage(image),
+          )
+        : Icon(icon),
+    title: const Text(
+      'Ahmed Kaim Khani',
+      style: Styling.font_18,
+    ),
+    subtitle: const Text(
+      'Chasing goals.',
+      style: Styling.font_14,
+    ),
+    trailing: const Icon(
+      Icons.qr_code,
+      color: Colors.teal,
+      size: 30,
     ),
   );
 }

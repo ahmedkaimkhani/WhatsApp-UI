@@ -6,7 +6,7 @@ class CustomColor {
 }
 
 class Styling {
-  static const font_16 = TextStyle(fontSize: 16);
+  static const font_18 = TextStyle(fontSize: 18);
   static const font_13 = TextStyle(fontSize: 13);
 
   static const font_14 = TextStyle(fontSize: 14);
