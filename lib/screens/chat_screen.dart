@@ -44,12 +44,13 @@ class ChatScreen extends StatelessWidget {
                     child: Text('Linked devices'),
                   ),
                   PopupMenuItem(
+                    mouseCursor: MouseCursor.defer,
                     value: 5,
                     child: GestureDetector(
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => SettingsScreen(),
+                              builder: (context) => const SettingsScreen(),
                             ),
                           );
                         },
