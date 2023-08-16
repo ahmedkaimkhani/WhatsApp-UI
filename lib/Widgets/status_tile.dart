@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../Styling/styling.dart';
+
 class StatusUpdate extends StatelessWidget {
   const StatusUpdate({
     super.key,
@@ -98,9 +100,4 @@ class CustomStatusStyle extends StatelessWidget {
       ],
     );
   }
-}
-
-class CustomColor {
-  static const colorRecentStatus = Colors.teal;
-  static const colorViewedStatus = Colors.grey;
 }

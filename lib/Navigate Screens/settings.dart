@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_whatsapp_ui/Navigate%20Widgets/setting_tile.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -20,6 +21,7 @@ class SettingsScreen extends StatelessWidget {
           )
         ],
       ),
+      body: const CustomSettingStyle(),
     );
   }
 }
