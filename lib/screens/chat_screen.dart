@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whatsapp_ui/Widgets/call_tile.dart';
+import 'package:flutter_whatsapp_ui/Navigate%20Screens/settings.dart';
 import 'package:flutter_whatsapp_ui/Widgets/chat_tile.dart';
 import 'package:flutter_whatsapp_ui/screens/call_screen.dart';
 import 'package:flutter_whatsapp_ui/screens/group_screen.dart';
@@ -43,9 +43,17 @@ class ChatScreen extends StatelessWidget {
                     value: 4,
                     child: Text('Linked devices'),
                   ),
-                  const PopupMenuItem(
+                  PopupMenuItem(
                     value: 5,
-                    child: Text('Settings'),
+                    child: GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => SettingsScreen(),
+                            ),
+                          );
+                        },
+                        child: const Text('Settings')),
                   ),
                 ],
               )
