@@ -5,14 +5,11 @@ import 'package:flutter_whatsapp_ui/screens/call_screen.dart';
 import 'package:flutter_whatsapp_ui/screens/group_screen.dart';
 import 'package:flutter_whatsapp_ui/screens/status_screen.dart';
 
-import '../Styling/styling.dart';
-
 class ChatScreen extends StatelessWidget {
   const ChatScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    IconStyle iconStyle = IconStyle();
     return SafeArea(
       child: DefaultTabController(
         length: 4,
@@ -99,6 +96,7 @@ class ChatScreen extends StatelessWidget {
                       subtitle: 'ok jani',
                       time: '8:33 PM',
                       image: 'assets/images/asim.jpg',
+                      icon: Icons.done_all,
                     ),
                     CustomChatStyle(
                       name: 'Usman',

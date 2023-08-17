@@ -51,12 +51,10 @@ class CustomChatStyle extends StatelessWidget {
             time,
             style: const TextStyle(color: Colors.grey, fontSize: 12),
           ),
-          if (icon != null)
-            icon == 'unSeen'
-                ? IconStyle.seenIcon
-                : icon == 'unSeen'
-                    ? IconStyle.unSeenIcon
-                    : Container(),
+          if (icon == 'unSeen')
+            IconStyle.unSeenIcon
+          else if (icon == 'seen')
+            IconStyle.seenIcon,
         ],
       ),
     );
