@@ -14,17 +14,14 @@ class Styling {
 }
 
 class IconStyle {
-  seenIcon() {
-    const Icon(
-      Icons.done_all,
-      color: Colors.teal,
-    );
-  }
-
-  unSeenIcon() {
-    const Icon(
-      Icons.done_all,
-      color: Colors.grey,
-    );
-  }
+  static const seenIcon = Icon(
+    Icons.done_all,
+    color: Colors.blue,
+    size: 18,
+  );
+  static const unSeenIcon = Icon(
+    Icons.done_all,
+    color: Colors.grey,
+    size: 18,
+  );
 }
