@@ -73,9 +73,21 @@ class CustomCallStyle extends StatelessWidget {
             name,
             style: const TextStyle(fontSize: 14),
           ),
-          subtitle: Text(
-            subtitle,
-            style: const TextStyle(color: Colors.grey, fontSize: 12),
+          subtitle: Row(
+            children: [
+              const Padding(
+                padding: EdgeInsets.only(right: 5),
+                child: Icon(
+                  Icons.call_received,
+                  color: Colors.red,
+                  size: 15,
+                ),
+              ),
+              Text(
+                subtitle,
+                style: const TextStyle(color: Colors.grey, fontSize: 12),
+              ),
+            ],
           ),
           trailing: const Icon(
             Icons.call,

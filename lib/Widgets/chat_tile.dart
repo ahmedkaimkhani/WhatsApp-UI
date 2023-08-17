@@ -6,7 +6,7 @@ class CustomChatStyle extends StatelessWidget {
   final String subtitle;
   final String time;
   final String? image;
-  final IconData? icon;
+  final String? icon;
   const CustomChatStyle(
       {super.key,
       required this.name,

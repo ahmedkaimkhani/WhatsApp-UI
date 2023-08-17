@@ -122,7 +122,7 @@ class SettingsScreen extends StatelessWidget {
             ),
             const Center(
                 child: Text(
-              'Meta',
+              'Ahmed',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
             )),
             const SizedBox(

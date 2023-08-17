@@ -26,6 +26,13 @@ class ChatScreen extends StatelessWidget {
               const Icon(Icons.camera_alt_outlined),
               const SizedBox(width: 10),
               PopupMenuButton(
+                onSelected: (value) {
+                  if (value == 5) {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const SettingsScreen(),
+                    ));
+                  }
+                },
                 color: const Color(0xff1F2C34),
                 itemBuilder: (context) => [
                   const PopupMenuItem(
@@ -44,36 +51,28 @@ class ChatScreen extends StatelessWidget {
                     value: 4,
                     child: Text('Linked devices'),
                   ),
-                  PopupMenuItem(
+                  const PopupMenuItem(
                     value: 5,
-                    child: GestureDetector(
-                        onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => const SettingsScreen(),
-                            ),
-                          );
-                        },
-                        child: const Text('Settings')),
+                    child: Text('Settings'),
                   ),
                 ],
               )
             ],
             bottom: const TabBar(tabs: [
               Tab(
-                icon: Icon(Icons.chat_bubble_outline),
+                // icon: Icon(Icons.chat_bubble_outline),
                 child: Text('Chats'),
               ),
               Tab(
-                icon: Icon(Icons.group_outlined),
+                // icon: Icon(Icons.group_outlined),
                 child: Text('Groups'),
               ),
               Tab(
-                icon: Icon(Icons.add_a_photo_rounded),
+                // icon: Icon(Icons.add_a_photo_rounded),
                 child: Text('Status'),
               ),
               Tab(
-                icon: Icon(Icons.call_outlined),
+                // icon: Icon(Icons.call_outlined),
                 child: Text('Calls'),
               ),
             ]),
@@ -89,26 +88,28 @@ class ChatScreen extends StatelessWidget {
                       subtitle: 'set hai',
                       time: '12:00 AM',
                       image: null,
-                      icon: Icons.done_all,
+                      icon: 'unseen',
                     ),
                     CustomChatStyle(
                       name: 'Asim',
                       subtitle: 'ok jani',
                       time: '8:33 PM',
                       image: 'assets/images/asim.jpg',
-                      icon: Icons.done_all,
+                      icon: 'seen',
                     ),
                     CustomChatStyle(
                       name: 'Usman',
                       subtitle: 'thek hai',
                       time: '5:53 PM',
                       image: 'assets/images/usman.jpg',
+                      icon: 'unseen',
                     ),
                     CustomChatStyle(
                       name: 'Arbaz',
                       subtitle: 'ok bro',
                       time: '10:14 PM',
                       image: 'assets/images/arbaz.jpg',
+                      icon: 'unseen',
                     ),
                     CustomChatStyle(
                       name: 'Naveed',
@@ -120,17 +121,20 @@ class ChatScreen extends StatelessWidget {
                       name: 'Areesh',
                       subtitle: 'bethty hain',
                       time: '6:44 PM',
+                      icon: 'seen',
                     ),
                     CustomChatStyle(
                       name: 'Awais',
                       subtitle: 'krty hain kuch',
                       time: '2:35 AM',
                       image: 'assets/images/awais.jpg',
+                      icon: 'seen',
                     ),
                     CustomChatStyle(
                       name: 'Faish SMIT',
                       subtitle: 'ok',
                       time: '3:11 AM',
+                      icon: 'seen',
                     ),
                     CustomChatStyle(
                       name: 'Hamza',
@@ -143,18 +147,21 @@ class ChatScreen extends StatelessWidget {
                       subtitle: 'hmm',
                       time: '1:52 AM',
                       image: 'assets/images/saim.jpg',
+                      icon: 'unseen',
                     ),
                     CustomChatStyle(
                       name: 'Imran',
                       subtitle: 'sahi',
                       time: '3:16 PM',
                       image: 'assets/images/imran.jpg',
+                      icon: 'unseen',
                     ),
                     CustomChatStyle(
                       name: 'Kashif',
                       subtitle: 'chalain',
                       time: '7:46 PM',
                       image: 'assets/images/kashif.jpg',
+                      icon: 'seen',
                     ),
                     CustomChatStyle(
                       name: 'Faizan',
