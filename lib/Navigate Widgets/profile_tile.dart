@@ -18,15 +18,26 @@ class CustomProfileTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        const SizedBox(
+          height: 20,
+        ),
         ListTile(
-          leading: Icon(iconL),
+          leading: Icon(
+            iconL,
+            size: 18,
+            color: Colors.grey,
+          ),
           title: Text(
             title,
             style: TextStyle(fontSize: 12, color: Colors.grey),
           ),
-          subtitle: Text(subTitle),
+          subtitle: Padding(
+            padding: const EdgeInsets.only(top: 5),
+            child: Text(subTitle),
+          ),
           trailing: Icon(
             iconR,
+            size: 18,
             color: Colors.teal,
           ),
         )
