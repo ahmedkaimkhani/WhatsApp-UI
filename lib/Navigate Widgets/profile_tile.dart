@@ -16,16 +16,30 @@ class CustomProfileTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Icon(iconL),
-      subtitle: Text(subTitle),
-      title: Column(
+    return Container(
+      width: double.infinity,
+      child: Column(
         children: [
-          Text(title),
-          Text(texT ?? ''),
+          Row(
+            children: [
+              Icon(iconL),
+              Column(
+                children: [
+                  Text(
+                    subTitle,
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                  Text(
+                    title,
+                    style: TextStyle(fontSize: 14, color: Colors.white),
+                  ),
+                  Icon(iconR),
+                ],
+              )
+            ],
+          )
         ],
       ),
-      trailing: Icon(iconR),
     );
   }
 }

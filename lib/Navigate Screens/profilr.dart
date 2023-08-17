@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_whatsapp_ui/Navigate%20Widgets/profile_tile.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -27,6 +28,13 @@ class ProfileScreen extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
+          ),
+          const CustomProfileTile(
+            subTitle: 'Name',
+            title: 'Ahmed',
+            iconL: Icons.person,
+            iconR: Icons.edit,
+            texT: 'This is not your username or pin',
           )
         ],
       ),
