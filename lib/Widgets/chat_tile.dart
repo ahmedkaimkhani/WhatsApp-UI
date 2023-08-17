@@ -17,6 +17,13 @@ class CustomChatStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget? trailingWidget;
+
+    if (icon == 'seen') {
+      trailingWidget = IconStyle.seenIcon;
+    } else if (icon == 'unseen') {
+      trailingWidget = IconStyle.unSeenIcon;
+    }
     return ListTile(
       leading: CircleAvatar(
         radius: 20,
@@ -51,10 +58,7 @@ class CustomChatStyle extends StatelessWidget {
             time,
             style: const TextStyle(color: Colors.grey, fontSize: 12),
           ),
-          if (icon == 'unSeen')
-            IconStyle.unSeenIcon
-          else if (icon == 'seen')
-            IconStyle.seenIcon,
+          if (trailingWidget != null) trailingWidget,
         ],
       ),
     );
