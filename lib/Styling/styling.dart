@@ -25,3 +25,21 @@ class IconStyle {
     size: 18,
   );
 }
+
+class CallIcon {
+  static const inComing = Icon(
+    Icons.call_received,
+    color: Colors.green,
+    size: 13,
+  );
+  static const outGoing = Icon(
+    Icons.call_made,
+    color: Colors.green,
+    size: 13,
+  );
+  static const missed = Icon(
+    Icons.call_received,
+    color: Colors.red,
+    size: 13,
+  );
+}

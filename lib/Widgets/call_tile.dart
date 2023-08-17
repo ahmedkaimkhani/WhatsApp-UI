@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_whatsapp_ui/Styling/styling.dart';
 
 class CallLink extends StatelessWidget {
   const CallLink({super.key});
@@ -46,11 +47,28 @@ class CustomCallStyle extends StatelessWidget {
   final String name;
   final String subtitle;
   final String? image;
+  final String? incomingCall;
+  final String? outGoingCall;
   const CustomCallStyle(
-      {super.key, required this.name, required this.subtitle, this.image});
+      {super.key,
+      required this.name,
+      required this.subtitle,
+      this.image,
+      this.incomingCall,
+      this.outGoingCall});
 
   @override
   Widget build(BuildContext context) {
+    Widget callingIcon;
+
+    if (incomingCall == 'incoming') {
+      callingIcon = CallIcon.inComing;
+    } else if (outGoingCall == 'outgoing') {
+      callingIcon = CallIcon.outGoing;
+    } else {
+      callingIcon = CallIcon.missed;
+    }
+
     return Column(
       children: [
         ListTile(
@@ -75,13 +93,9 @@ class CustomCallStyle extends StatelessWidget {
           ),
           subtitle: Row(
             children: [
-              const Padding(
-                padding: EdgeInsets.only(right: 5),
-                child: Icon(
-                  Icons.call_received,
-                  color: Colors.red,
-                  size: 15,
-                ),
+              Padding(
+                padding: const EdgeInsets.only(right: 5),
+                child: callingIcon,
               ),
               Text(
                 subtitle,
