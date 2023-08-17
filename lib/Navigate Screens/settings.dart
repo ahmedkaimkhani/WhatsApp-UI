@@ -17,7 +17,7 @@ class SettingsScreen extends StatelessWidget {
         title: const Text('Settings'),
         actions: const [
           Padding(
-            padding: EdgeInsets.only(right: 15),
+            padding: EdgeInsets.only(right: 13),
             child: Icon(Icons.search),
           )
         ],
@@ -41,7 +41,7 @@ class SettingsScreen extends StatelessWidget {
               thickness: 0.1,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'Account',
                 subtitle: 'Security notifications, chnage number',
@@ -49,7 +49,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'Privacy',
                 subtitle: 'Block contacts, disappearing messages',
@@ -57,7 +57,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'Avatar',
                 subtitle: 'Create, edit, profile photo',
@@ -65,7 +65,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'Chats',
                 subtitle: 'Theme, wallpapers, chat history',
@@ -73,7 +73,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'Notifications',
                 subtitle: 'Message, group & call tones',
@@ -81,7 +81,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'Storage and data',
                 subtitle: 'Network usage, auto-download',
@@ -89,7 +89,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'App language',
                 subtitle: 'English (phone\'s language)',
@@ -97,7 +97,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'Help',
                 subtitle: 'help center, contactus, privacy ploicy',
@@ -105,7 +105,7 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.symmetric(horizontal: 13),
               child: customListTile(
                 title: 'Invite a friend',
                 subtitle: '',

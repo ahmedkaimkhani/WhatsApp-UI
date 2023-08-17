@@ -14,16 +14,19 @@ class CallScreen extends StatelessWidget {
             name: 'Ahmed',
             subtitle: 'Today, 2:34 AM',
             image: null,
+            calling: 'incoming',
           ),
           CustomCallStyle(
             name: 'Asim',
             subtitle: 'Today, 1:28 AM',
             image: 'assets/images/asim.jpg',
+            calling: 'outgoing',
           ),
           CustomCallStyle(
             name: 'Usman',
             subtitle: 'Yesterday, 8:45 PM',
             image: 'assets/images/usman.jpg',
+            calling: 'outgoing',
           ),
           CustomCallStyle(
             name: 'Arbaz',
@@ -43,6 +46,7 @@ class CallScreen extends StatelessWidget {
             name: 'Awais',
             subtitle: 'August 14, 7:11 PM',
             image: 'assets/images/awais.jpg',
+            calling: 'incoming',
           ),
           CustomCallStyle(
             name: 'Faish SMIT',
@@ -52,6 +56,7 @@ class CallScreen extends StatelessWidget {
             name: 'Hamza',
             subtitle: 'August 11, 9:15 AM',
             image: 'assets/images/hamza.jpg',
+            calling: 'outgoing',
           ),
           CustomCallStyle(
             name: 'Saim',
@@ -67,6 +72,7 @@ class CallScreen extends StatelessWidget {
             name: 'Kashif',
             subtitle: 'August 10, 2:11 PM',
             image: 'assets/images/kashif.jpg',
+            calling: 'outgoing',
           ),
           CustomCallStyle(
             name: 'Faizan',

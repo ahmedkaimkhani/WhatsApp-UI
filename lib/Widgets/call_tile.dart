@@ -47,23 +47,22 @@ class CustomCallStyle extends StatelessWidget {
   final String name;
   final String subtitle;
   final String? image;
-  final String? incomingCall;
-  final String? outGoingCall;
-  const CustomCallStyle(
-      {super.key,
-      required this.name,
-      required this.subtitle,
-      this.image,
-      this.incomingCall,
-      this.outGoingCall});
+  final String? calling;
+  const CustomCallStyle({
+    super.key,
+    required this.name,
+    required this.subtitle,
+    this.image,
+    this.calling,
+  });
 
   @override
   Widget build(BuildContext context) {
     Widget callingIcon;
 
-    if (incomingCall == 'incoming') {
+    if (calling == 'incoming') {
       callingIcon = CallIcon.inComing;
-    } else if (outGoingCall == 'outgoing') {
+    } else if (calling == 'outgoing') {
       callingIcon = CallIcon.outGoing;
     } else {
       callingIcon = CallIcon.missed;

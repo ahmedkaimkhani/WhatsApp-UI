@@ -16,7 +16,7 @@ Widget customListTile({
     child: ListTile(
       leading: image != null
           ? CircleAvatar(
-              radius: 40,
+              radius: 30,
               backgroundImage: AssetImage(image),
             )
           : Icon(
