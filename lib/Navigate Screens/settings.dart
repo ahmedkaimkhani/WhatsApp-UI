@@ -1,25 +1,49 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_whatsapp_ui/Navigate%20Screens/profilr.dart';
 import 'package:flutter_whatsapp_ui/Navigate%20Widgets/setting_tile.dart';
 import 'package:flutter_whatsapp_ui/Styling/styling.dart';
 
-class SettingsScreen extends StatelessWidget {
+class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
+
+  @override
+  State<SettingsScreen> createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends State<SettingsScreen> {
+  bool _isSearchVisible = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
+        leading: _isSearchVisible
+            ? IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  setState(() {
+                    _isSearchVisible = false;
+                  });
+                },
+              )
+            : null,
+        title: _isSearchVisible
+            ? const TextField(
+                decoration: InputDecoration(
+                  hintText: 'Search...',
+                  border: InputBorder.none, // Remove the underline
+                ),
+              )
+            : const Text('Settings'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
             onPressed: () {
-              Navigator.pop(context);
+              setState(() {
+                _isSearchVisible = true;
+              });
             },
-            icon: const Icon(Icons.arrow_back)),
-        title: const Text('Settings'),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 13),
-            child: Icon(Icons.search),
-          )
+          ),
         ],
       ),
       body: SingleChildScrollView(
@@ -27,13 +51,20 @@ class SettingsScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 10),
-              child: customListTile(
-                title: 'Ahmed Kaim Khani',
-                subtitle: 'Chasing goals.',
-                image: 'assets/images/mine.jpg',
-                iconT: Icons.qr_code,
-                fontSizeT: Styling.font_18,
-                fontSizeS: Styling.font_14,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const ProfileScreen(),
+                  ));
+                },
+                child: customListTile(
+                  title: 'Ahmed Kaim Khani',
+                  subtitle: 'Chasing goals.',
+                  image: 'assets/images/mine.jpg',
+                  iconT: Icons.qr_code,
+                  fontSizeT: Styling.font_18,
+                  fontSizeS: Styling.font_14,
+                ),
               ),
             ),
             const Divider(
