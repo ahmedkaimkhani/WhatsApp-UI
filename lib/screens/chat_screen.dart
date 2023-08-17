@@ -29,27 +29,22 @@ class ChatScreen extends StatelessWidget {
                 color: const Color(0xff1F2C34),
                 itemBuilder: (context) => [
                   const PopupMenuItem(
-                    enabled: false,
                     value: 1,
                     child: Text('Auto Reply'),
                   ),
                   const PopupMenuItem(
-                    enabled: false,
                     value: 2,
                     child: Text('Message a number'),
                   ),
                   const PopupMenuItem(
-                    enabled: false,
                     value: 3,
                     child: Text('New Groups'),
                   ),
                   const PopupMenuItem(
-                    enabled: false,
                     value: 4,
                     child: Text('Linked devices'),
                   ),
                   PopupMenuItem(
-                    enabled: false,
                     value: 5,
                     child: GestureDetector(
                         onTap: () {

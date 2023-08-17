@@ -40,50 +40,77 @@ class SettingsScreen extends StatelessWidget {
               color: Colors.grey,
               thickness: 0.1,
             ),
-            customListTile(
-              title: 'Account',
-              subtitle: 'Security notifications, chnage number',
-              icon: Icons.key,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'Account',
+                subtitle: 'Security notifications, chnage number',
+                icon: Icons.key,
+              ),
             ),
-            customListTile(
-              title: 'Privacy',
-              subtitle: 'Block contacts, disappearing messages',
-              icon: Icons.lock,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'Privacy',
+                subtitle: 'Block contacts, disappearing messages',
+                icon: Icons.lock,
+              ),
             ),
-            customListTile(
-              title: 'Avatar',
-              subtitle: 'Create, edit, profile photo',
-              icon: Icons.account_circle,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'Avatar',
+                subtitle: 'Create, edit, profile photo',
+                icon: Icons.account_circle,
+              ),
             ),
-            customListTile(
-              title: 'Chats',
-              subtitle: 'Theme, wallpapers, chat history',
-              icon: Icons.chat,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'Chats',
+                subtitle: 'Theme, wallpapers, chat history',
+                icon: Icons.chat,
+              ),
             ),
-            customListTile(
-              title: 'Notifications',
-              subtitle: 'Message, group & call tones',
-              icon: Icons.notifications,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'Notifications',
+                subtitle: 'Message, group & call tones',
+                icon: Icons.notifications,
+              ),
             ),
-            customListTile(
-              title: 'Storage and data',
-              subtitle: 'Network usage, auto-download',
-              icon: Icons.data_saver_off,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'Storage and data',
+                subtitle: 'Network usage, auto-download',
+                icon: Icons.data_saver_off,
+              ),
             ),
-            customListTile(
-              title: 'App language',
-              subtitle: 'English (phone\'s language)',
-              icon: Icons.language,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'App language',
+                subtitle: 'English (phone\'s language)',
+                icon: Icons.language,
+              ),
             ),
-            customListTile(
-              title: 'Help',
-              subtitle: 'help center, contactus, privacy ploicy',
-              icon: Icons.help_outline,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'Help',
+                subtitle: 'help center, contactus, privacy ploicy',
+                icon: Icons.help_outline,
+              ),
             ),
-            customListTile(
-              title: 'Invite a friend',
-              subtitle: '',
-              icon: Icons.group,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: customListTile(
+                title: 'Invite a friend',
+                subtitle: '',
+                icon: Icons.group,
+              ),
             ),
             const Center(
                 child: Text(
