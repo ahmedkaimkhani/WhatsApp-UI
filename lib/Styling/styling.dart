@@ -12,3 +12,19 @@ class Styling {
   static const font_14 = TextStyle(fontSize: 14);
   static const font_12 = TextStyle(fontSize: 12);
 }
+
+class IconStyle {
+  seenIcon() {
+    const Icon(
+      Icons.done_all,
+      color: Colors.teal,
+    );
+  }
+
+  unSeenIcon() {
+    const Icon(
+      Icons.done_all,
+      color: Colors.grey,
+    );
+  }
+}

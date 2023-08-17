@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_whatsapp_ui/Styling/styling.dart';
 
 class CustomChatStyle extends StatelessWidget {
   final String name;
   final String subtitle;
   final String time;
   final String? image;
+  final IconData? icon;
   const CustomChatStyle(
       {super.key,
       required this.name,
       required this.subtitle,
       required this.time,
-      this.image});
+      this.image,
+      this.icon});
 
   @override
   Widget build(BuildContext context) {
+    IconStyle iconStyle = IconStyle();
+
     return ListTile(
       leading: CircleAvatar(
         radius: 20,
@@ -41,9 +46,18 @@ class CustomChatStyle extends StatelessWidget {
         subtitle,
         style: const TextStyle(color: Colors.grey, fontSize: 12),
       ),
-      trailing: Text(
-        time,
-        style: const TextStyle(color: Colors.grey, fontSize: 12),
+      trailing: Column(
+        children: [
+          Text(
+            time,
+            style: const TextStyle(color: Colors.grey, fontSize: 12),
+          ),
+          if (icon != null)
+            Icon(
+              icon,
+              color: CustomColor.colorRecentStatus,
+            ),
+        ],
       ),
     );
   }
