@@ -6,7 +6,9 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('Profile'),
+      ),
       body: Column(
         children: [
           const SizedBox(
@@ -14,8 +16,8 @@ class ProfileScreen extends StatelessWidget {
           ),
           Center(
             child: Container(
-              height: 150,
-              width: 150,
+              height: 130,
+              width: 130,
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
