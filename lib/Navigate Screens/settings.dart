@@ -51,7 +51,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 10),
-              child: GestureDetector(
+              child: InkWell(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => const ProfileScreen(),
@@ -70,6 +70,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
             const Divider(
               color: Colors.grey,
               thickness: 0.1,
+            ),
+            const SizedBox(
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 13),

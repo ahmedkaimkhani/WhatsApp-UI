@@ -17,17 +17,32 @@ class ProfileScreen extends StatelessWidget {
             height: 30,
           ),
           Center(
-            child: Container(
-              height: 150,
-              width: 150,
-              clipBehavior: Clip.antiAlias,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
-              ),
-              child: Image.asset(
-                'assets/images/mine.jpg',
-                fit: BoxFit.cover,
-              ),
+            child: Stack(
+              children: [
+                Container(
+                  height: 150,
+                  width: 150,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: Image.asset(
+                    'assets/images/mine.jpg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                const Positioned(
+                    bottom: 1,
+                    right: 1,
+                    child: CircleAvatar(
+                      radius: 25,
+                      backgroundColor: Colors.teal,
+                      child: Icon(
+                        Icons.camera_alt,
+                        color: Colors.white,
+                      ),
+                    )),
+              ],
             ),
           ),
           const Padding(
