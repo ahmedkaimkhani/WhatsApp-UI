@@ -34,7 +34,8 @@ class ProfileScreen extends StatelessWidget {
             title: 'Name',
             iconL: Icons.person,
             iconR: Icons.edit,
-            texT: 'This is not your username or pin',
+            texT:
+                'This is not your username or pin. This name will be visible to your WhatsApp contacts.',
           )
         ],
       ),
