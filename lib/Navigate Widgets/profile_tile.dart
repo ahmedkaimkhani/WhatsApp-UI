@@ -23,9 +23,15 @@ class CustomProfileTile extends StatelessWidget {
         children: [
           Icon(iconL),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(title),
               Text(subTitle),
+            ],
+          ),
+          Column(
+            children: [
+              Text(texT ?? ''),
             ],
           )
         ],
