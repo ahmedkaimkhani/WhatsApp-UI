@@ -18,8 +18,8 @@ class ProfileScreen extends StatelessWidget {
           ),
           Center(
             child: Container(
-              height: 130,
-              width: 130,
+              height: 150,
+              width: 150,
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
