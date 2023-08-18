@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whatsapp_ui/Navigate%20Screens/profilr.dart';
+import 'package:flutter_whatsapp_ui/Navigate%20Screens/profile.dart';
 import 'package:flutter_whatsapp_ui/Navigate%20Widgets/setting_tile.dart';
 import 'package:flutter_whatsapp_ui/Styling/styling.dart';
 

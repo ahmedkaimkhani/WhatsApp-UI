@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_ui/Navigate%20Widgets/profile_tile.dart';
+import 'package:flutter_whatsapp_ui/Styling/styling.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -36,7 +37,26 @@ class ProfileScreen extends StatelessWidget {
             iconR: Icons.edit,
             texT:
                 'This is not your username or pin. This name will be visible to your WhatsApp contacts.',
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 63),
+            child: CustomDivider.divider,
+          ),
+          const CustomProfileTile(
+            title: 'About',
+            subTitle: 'Chasing goals.',
+            iconL: Icons.help_outline,
+            iconR: Icons.edit,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 63),
+            child: CustomDivider.divider,
+          ),
+          const CustomProfileTile(
+            title: 'Phone',
+            subTitle: '+92 3151717101',
+            iconL: Icons.help_outline,
+          ),
         ],
       ),
     );

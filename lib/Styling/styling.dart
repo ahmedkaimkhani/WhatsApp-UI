@@ -10,7 +10,9 @@ class Styling {
   static const font_13 = TextStyle(fontSize: 13);
 
   static const font_14 = TextStyle(fontSize: 14);
-  static TextStyle font_12 = TextStyle(fontSize: 12, );
+  static TextStyle font_12 = TextStyle(
+    fontSize: 12,
+  );
 }
 
 class IconStyle {
@@ -41,5 +43,13 @@ class CallIcon {
     Icons.call_received,
     color: Colors.red,
     size: 13,
+  );
+}
+
+class CustomDivider {
+  static final divider = Container(
+    height: 0.1,
+    width: double.infinity,
+    color: Colors.white,
   );
 }
