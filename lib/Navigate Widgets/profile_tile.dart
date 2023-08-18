@@ -46,10 +46,13 @@ class CustomProfileTile extends StatelessWidget {
                   Text(subTitle),
                   Padding(
                     padding: const EdgeInsets.only(top: 10),
-                    child: Text(
-                      texT ?? '',
-                      style: const TextStyle(fontSize: 12, color: Colors.grey),
-                    ),
+                    child: texT != null
+                        ? Text(
+                            texT!,
+                            style: const TextStyle(
+                                fontSize: 12, color: Colors.grey),
+                          )
+                        : null,
                   ),
                 ],
               ),
