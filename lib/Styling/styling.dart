@@ -10,7 +10,7 @@ class Styling {
   static const font_13 = TextStyle(fontSize: 13);
 
   static const font_14 = TextStyle(fontSize: 14);
-  static const font_12 = TextStyle(fontSize: 12);
+  static TextStyle font_12 = TextStyle(fontSize: 12, );
 }
 
 class IconStyle {
