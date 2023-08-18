@@ -48,10 +48,7 @@ class ProfileScreen extends StatelessWidget {
             iconL: Icons.help_outline,
             iconR: Icons.edit,
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 63),
-            child: CustomDivider.divider,
-          ),
+          CustomDivider.divider,
           const CustomProfileTile(
             title: 'Phone',
             subTitle: '+92 3151717101',
