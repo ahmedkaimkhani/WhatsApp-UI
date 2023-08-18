@@ -29,7 +29,7 @@ class CustomProfileTile extends StatelessWidget {
                 color: Colors.grey,
               ),
             ),
-            Flexible(
+            Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -43,13 +43,16 @@ class CustomProfileTile extends StatelessWidget {
                   Text(subTitle),
                   Padding(
                     padding: const EdgeInsets.only(top: 10),
-                    child: OverflowBox(
-                      maxWidth: double.infinity,
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        texT ?? '',
-                        style:
-                            const TextStyle(fontSize: 12, color: Colors.grey),
+                    child: Container(
+                      constraints: BoxConstraints(
+                          maxWidth: double.infinity), // Constrain the width
+                      child: OverflowBox(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          texT ?? '',
+                          style:
+                              const TextStyle(fontSize: 12, color: Colors.grey),
+                        ),
                       ),
                     ),
                   ),
