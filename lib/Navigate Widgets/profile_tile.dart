@@ -16,31 +16,9 @@ class CustomProfileTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-      leading: Icon(
-        iconL,
-        size: 18,
-        color: Colors.grey,
-      ),
-      title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            title,
-            style: TextStyle(fontSize: 12, color: Colors.grey),
-          ),
-          Icon(
-            iconR,
-            size: 18,
-            color: Colors.teal,
-          ),
-        ],
-      ),
-      subtitle: Padding(
-        padding: const EdgeInsets.only(top: 5),
-        child: Text(subTitle),
-      ),
+    return Container(
+      color: Colors.red,
+      child: Column(),
     );
   }
 }
@@ -67,4 +45,30 @@ class CustomProfileTile extends StatelessWidget {
       //       ],
       //     )
       //   ],
+      // ),
+
+      // ListTile(
+      //   leading: Icon(
+      //     iconL,
+      //     size: 18,
+      //     color: Colors.grey,
+      //   ),
+      //   title: Row(
+      //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //     children: [
+      //       Text(
+      //         title,
+      //         style: TextStyle(fontSize: 12, color: Colors.grey),
+      //       ),
+      //       Icon(
+      //         iconR,
+      //         size: 18,
+      //         color: Colors.teal,
+      //       ),
+      //     ],
+      //   ),
+      //   subtitle: Padding(
+      //     padding: const EdgeInsets.only(top: 5),
+      //     child: Text(subTitle),
+      //   ),
       // ),
