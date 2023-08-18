@@ -18,23 +18,44 @@ class CustomProfileTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      color: Colors.red,
-      child: Row(
-        children: [
-          Icon(iconL),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(title),
-              Text(subTitle),
-            ],
-          ),
-          Column(
-            children: [
-              Text(texT ?? ''),
-            ],
-          )
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(right: 20),
+              child: Icon(
+                iconL,
+                color: Colors.grey,
+              ),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 6),
+                  child: Text(
+                    title,
+                    style: const TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                ),
+                Text(subTitle),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: Text(
+                    texT ?? '',
+                    style: const TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                ),
+              ],
+            ),
+            const Spacer(),
+            Icon(
+              iconR,
+              color: Colors.teal,
+            ),
+          ],
+        ),
       ),
     );
   }
