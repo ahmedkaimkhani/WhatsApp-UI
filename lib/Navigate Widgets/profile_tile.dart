@@ -29,35 +29,25 @@ class CustomProfileTile extends StatelessWidget {
                 color: Colors.grey,
               ),
             ),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 6),
-                    child: Text(
-                      title,
-                      style: const TextStyle(fontSize: 12, color: Colors.grey),
-                    ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 6),
+                  child: Text(
+                    title,
+                    style: const TextStyle(fontSize: 12, color: Colors.grey),
                   ),
-                  Text(subTitle),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10),
-                    child: Container(
-                      constraints: BoxConstraints(
-                          maxWidth: double.infinity), // Constrain the width
-                      child: OverflowBox(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          texT ?? '',
-                          style:
-                              const TextStyle(fontSize: 12, color: Colors.grey),
-                        ),
-                      ),
-                    ),
+                ),
+                Text(subTitle),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: Text(
+                    texT ?? '',
+                    style: const TextStyle(fontSize: 12, color: Colors.grey),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             const Spacer(),
             Icon(
