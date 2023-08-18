@@ -23,7 +23,10 @@ class CustomProfileTile extends StatelessWidget {
         children: [
           Icon(iconL),
           Column(
-            children: [Text(title)],
+            children: [
+              Text(title),
+              Text(subTitle),
+            ],
           )
         ],
       ),
