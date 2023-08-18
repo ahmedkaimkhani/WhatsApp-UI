@@ -30,13 +30,16 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
           ),
-          const CustomProfileTile(
-            subTitle: 'Ahmed kaim Khani',
-            title: 'Name',
-            iconL: Icons.person,
-            iconR: Icons.edit,
-            texT:
-                'This is not your username or pin. This name will be visible to your WhatsApp contacts.',
+          const Padding(
+            padding: EdgeInsets.only(top: 20),
+            child: CustomProfileTile(
+              subTitle: 'Ahmed kaim Khani',
+              title: 'Name',
+              iconL: Icons.person,
+              iconR: Icons.edit,
+              texT:
+                  'This is not your username or pin. This name will be visible to your WhatsApp contacts.',
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 63),
